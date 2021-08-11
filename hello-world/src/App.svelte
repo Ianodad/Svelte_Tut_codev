@@ -5,11 +5,13 @@
 	import Greet from './components/Greet.svelte'
 	import ComponentC from './components/ComponentC.svelte'
 	import Popup from './components/Popup.svelte'
-import Outer from './components/Outer.svelte'
-import Button from './components/Button.svelte'
+	import Outer from './components/Outer.svelte'
+	import Button from './components/Button.svelte'
 
 	import Card from './components/Card.svelte'
 	import NameList from './components/NameList.svelte'
+	import PostList from './components/PostList.svelte';
+	import AutoFocus from './components/AutoFocus.svelte'
 	
 	// Vids 1-8
 	// const name = "Ian"
@@ -283,8 +285,10 @@ import Button from './components/Button.svelte'
 			{firstName}
 		</h3>
 	</NameList> -->
-	<h4>App components text</h4>
-	<ChildStyles/>
+	<!-- <PostList/> -->
+	<AutoFocus/>
+	<!-- <h4>App components text</h4> -->
+	<!-- <ChildStyles/> -->
 </main>
 	<style>
 
