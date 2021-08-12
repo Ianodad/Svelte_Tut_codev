@@ -12,7 +12,14 @@
 	import NameList from './components/NameList.svelte'
 	import PostList from './components/PostList.svelte';
 	import AutoFocus from './components/AutoFocus.svelte'
-	
+	import TabA from './components/TabA.svelte';
+	import TabB from './components/TabB.svelte';
+	import TabC from './components/TabC.svelte';
+
+	import Counter, {getTotaCount} from './components/Counter.svelte';
+
+	let activeTab = TabA
+
 	// Vids 1-8
 	// const name = "Ian"
 	// const channel = '<b>Master Planner</b>'
@@ -286,9 +293,29 @@
 		</h3>
 	</NameList> -->
 	<!-- <PostList/> -->
-	<AutoFocus/>
+	<!-- <AutoFocus/> -->
 	<!-- <h4>App components text</h4> -->
 	<!-- <ChildStyles/> -->
+
+	<!-- <button on:click={() => (activeTab = TabA)}>Tab A</button>
+	<button on:click={() => (activeTab = TabB)}>Tab B</button>
+	<button on:click={() => (activeTab = TabC)}>Tab C</button>
+
+	<svelte:component this={activeTab}></svelte:component> -->
+
+	<!-- {#if activeTab === 'TabA'}
+	<TabA/>
+	{/if}
+	{#if activeTab ==='TabB'}
+	<TabB/>
+	{/if}
+	{#if activeTab ==='TabC'}
+	<TabC/>
+	{/if} -->
+	<button on:click={()=>alert(getTotaCount())}>Alert total count</button>
+	<Counter/>
+	<Counter/>
+	<Counter/>
 </main>
 	<style>
 
