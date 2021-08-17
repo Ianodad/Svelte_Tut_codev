@@ -18,6 +18,11 @@
 
 	import Counter, {getTotaCount} from './components/Counter.svelte';
 
+	import Display from "./components/Display.svelte"
+	import Increment from './components/Increment.svelte';
+	import Decrement from './components/Decrement.svelte';
+	import Reset from './components/Reset.svelte'
+
 	let activeTab = TabA
 
 	// Vids 1-8
@@ -313,9 +318,13 @@
 	<TabC/>
 	{/if} -->
 	<button on:click={()=>alert(getTotaCount())}>Alert total count</button>
+	<Increment/>
+	<Decrement/>
+	<!-- <Counter/>
 	<Counter/>
-	<Counter/>
-	<Counter/>
+	<Counter/> -->
+	<Display/>
+	<Reset/>
 </main>
 	<style>
 
